@@ -22,7 +22,7 @@ class ViewController: UIViewController {
        override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        funFactLabel.text = "Another Interesting Fact"
+        funFactLabel.text = "Tap button to change color"
     }
 
     override func didReceiveMemoryWarning() {
