@@ -9,7 +9,7 @@
 import UIKit
 
 
-var funFactArray = ["Grey", "Blue", "Green", "Yellow", "Brown", "Cyan", "Magenta", "Red", "Purple", "White"]
+var funFactArray = ["Grey", "Blue", "Green", "Yellow", "Brown", "Cyan", "Magenta", "Red", "Purple", "white"]
 
 
 class ViewController: UIViewController {
