@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,22 +19,22 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lIh-bM-rPK">
-                                <rect key="frame" x="97" y="483" width="180" height="30"/>
+                                <rect key="frame" x="20" y="786" width="728" height="84"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="2pu-Ao-LWF"/>
+                                    <constraint firstAttribute="height" constant="84" id="Ip6-sA-kru"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <state key="normal" title="New Fact"/>
+                                <state key="normal" title="Change Color"/>
                                 <connections>
                                     <action selector="showFact" destination="BYZ-38-t0r" eventType="touchUpInside" id="znu-7h-iLb"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some Fact Goes Here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dS2-lZ-tj2">
-                                <rect key="frame" x="16" y="74" width="343" height="21"/>
+                                <rect key="frame" x="20" y="74" width="728" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -42,12 +42,12 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lIh-bM-rPK" secondAttribute="bottom" constant="154" id="1BA-LO-qAT"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lIh-bM-rPK" secondAttribute="bottom" constant="154" id="02J-kf-SBM"/>
                             <constraint firstItem="dS2-lZ-tj2" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Lwg-3a-qaq"/>
-                            <constraint firstItem="lIh-bM-rPK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="81" id="MD6-Yn-XUB"/>
+                            <constraint firstItem="lIh-bM-rPK" firstAttribute="trailing" secondItem="dS2-lZ-tj2" secondAttribute="trailing" id="Q69-6Z-rcw"/>
                             <constraint firstItem="dS2-lZ-tj2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="e96-tG-Ya3"/>
                             <constraint firstItem="dS2-lZ-tj2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="54" id="gZL-tz-PQq"/>
-                            <constraint firstItem="dS2-lZ-tj2" firstAttribute="centerX" secondItem="lIh-bM-rPK" secondAttribute="centerX" id="lPd-lY-7uo"/>
+                            <constraint firstItem="lIh-bM-rPK" firstAttribute="leading" secondItem="dS2-lZ-tj2" secondAttribute="leading" id="y2b-hz-hTq"/>
                         </constraints>
                     </view>
                     <connections>
@@ -56,7 +56,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+            <point key="canvasLocation" x="136.71875" y="137.109375"/>
         </scene>
     </scenes>
 </document>

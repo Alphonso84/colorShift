@@ -9,7 +9,7 @@
 import UIKit
 
 
-var funFactArray = ["Fact1", "Fact2", "Fact3", "Fact4", "Fact5"]
+var funFactArray = ["Grey", "Blue", "Green", "Yellow", "Brown", "Cyan", "Magenta", "Red", "Purple", "White"]
 
 
 class ViewController: UIViewController {
@@ -49,6 +49,16 @@ class ViewController: UIViewController {
             self.view.backgroundColor = UIColor.green
         case 4:
             self.view.backgroundColor = UIColor.yellow
+        case 5:
+            self.view.backgroundColor = UIColor.brown
+        case 6:
+            self.view.backgroundColor = UIColor.cyan
+        case 7:
+            self.view.backgroundColor = UIColor.magenta
+        case 8:
+            self.view.backgroundColor = UIColor.red
+        case 9:
+            self.view.backgroundColor = UIColor.purple
         default:
             self.view.backgroundColor = UIColor.white
         }
