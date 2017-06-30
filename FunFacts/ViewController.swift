@@ -9,11 +9,11 @@
 import UIKit
 
 
-var funFactArray = ["Grey", "Blue", "Green", "Yellow", "Brown", "Cyan", "Magenta", "Red", "Purple", "white"]
+var colorsArray = ["Grey", "Blue", "Green", "Yellow", "Brown", "Cyan", "Magenta", "Red", "Purple", "White"]
 
 
 class ViewController: UIViewController {
-    @IBOutlet weak var funFactLabel: UILabel!
+    @IBOutlet weak var colorLabel: UILabel!
     var labelValue: String?
     var buttonPresses: Int = 0
     
@@ -22,7 +22,7 @@ class ViewController: UIViewController {
        override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        funFactLabel.text = "Tap button to change color"
+        colorLabel.text = "Tap button to change color"
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,21 +30,22 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func showFact() {
+   
+    @IBAction func changeColor(_ sender: Any) {
         //Label text will equal the funFactArray position using the incremented variable value
-        funFactLabel.text = funFactArray[buttonPresses]
+        colorLabel.text = colorsArray[buttonPresses]
         buttonPresses += 1
         //The following line insures no out of bounds
-        if (buttonPresses == funFactArray.count) {
+        if (buttonPresses == colorsArray.count) {
             buttonPresses = 0
         }
-
+        
         //added a switch statement to increment through background colors on button presses
         switch buttonPresses {
         case 1:
-           self.view.backgroundColor = UIColor.gray;
+            self.view.backgroundColor = UIColor.gray;
         case 2:
-           self.view.backgroundColor = UIColor.blue
+            self.view.backgroundColor = UIColor.blue
         case 3:
             self.view.backgroundColor = UIColor.green
         case 4:
@@ -65,6 +66,8 @@ class ViewController: UIViewController {
         
     }
 }
+   
+
 
 
 
